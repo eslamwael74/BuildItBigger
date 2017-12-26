@@ -9,12 +9,14 @@ public class Joke {
 
     public Joke() {
 
-        jokes = new String[3];
+        jokes = new String[5];
         random = new Random();
 
-        jokes[0] = "This is firstjoke:D";
-        jokes[1] = "This is secondjoke:D";
-        jokes[2] = "This is thirdjoke:D";
+        jokes[0] = "This is firstJoke:D";
+        jokes[1] = "This is secondJoke:D";
+        jokes[2] = "This is thirdJoke:D";
+        jokes[3] = "This is forthJoke:D";
+        jokes[4] = "This is fifthJoke:D";
 
 
 
@@ -22,7 +24,9 @@ public class Joke {
 
     public String getAJoke(){
 
-        return jokes[0];
+        String randomJoke = jokes[random.nextInt(5)];
+
+        return randomJoke;
     }
 
 }

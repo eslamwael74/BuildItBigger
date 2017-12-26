@@ -47,7 +47,7 @@ public class MyEndpoint {
     @ApiMethod(name = "getAJoke")
     public MyBean getAJoke() {
         MyBean myBeanResponse = new MyBean();
-        myBeanResponse.setData("asasasasasasasasasasassa");
+        myBeanResponse.setData(joke.getAJoke());
 
         return myBeanResponse;
     }

@@ -22,9 +22,11 @@ import java.io.IOException;
 class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
     private MyApi myApiService = null;
     private Context context;
+    private MainListener mainListener;
 
-    public EndpointsAsyncTask(Context context) {
+    public EndpointsAsyncTask(Context context,MainListener mainListener) {
         this.context = context;
+        this.mainListener = mainListener;
     }
 
     @Override
@@ -63,5 +65,6 @@ class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
         Toast.makeText(context, result, Toast.LENGTH_LONG).show();
         Log.d(TAG, "onPostExecute: " + result);
         Log.i(TAG, "onPostExecute: " + result) ;
+        mainListener.onJokeSuccess(result);
     }
 }
