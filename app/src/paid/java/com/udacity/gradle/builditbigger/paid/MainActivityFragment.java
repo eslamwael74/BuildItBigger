@@ -30,8 +30,6 @@ import java.io.IOException;
  */
 public class MainActivityFragment extends Fragment {
 
-    Button btn2,mBtnAndroidJoke;
-
     public MainActivityFragment() {
     }
 
@@ -41,34 +39,8 @@ public class MainActivityFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
 
-
-        btn2 = (Button) root.findViewById(R.id.btn_joke);
-        mBtnAndroidJoke = (Button) root.findViewById(R.id.btn_android_joke);
-
-//        Joke joke = new Joke();
-//        final String fJoke = joke.getAJoke();
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-//                Toast.makeText(getActivity(), "" + fJoke,  Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        mBtnAndroidJoke.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Intent intent = new Intent(getActivity(),JokeActivity.class);
-//                intent.putExtra("joke",fJoke);
-//                startActivity(intent);
-            }
-        });
-
-
         return root;
     }
-
 
 
 }
