@@ -44,7 +44,7 @@ dependencies {
     }
     implementation 'com.android.support:support-annotations:25.4.0'
     implementation 'com.android.support:appcompat-v7:25.4.0'
-    implementation 'com.google.android.gms:play-services-ads:9.8.0'
+    freeImplementation 'com.google.android.gms:play-services-ads:9.8.0'
     implementation project(':Javalib')
     implementation project(':jokelibrary')
     implementation project(path: ':backend', configuration: 'android-endpoints')
@@ -61,18 +61,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test:rules:1.0.1'
-
-//    compile "com.android.support.test:runner:1.0.1"
-//    compile "com.android.support.test:rules:1.0.1"
-//
-//    testCompile "org.mockito:mockito-core:1.9.5"
-//
-//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-//
-//    androidTestImplementation ('com.android.support.test.espresso:espresso-core:2.2.2'){
-//        exclude group: 'com.google.code.findbugs'
-//    }
-
     androidTestImplementation 'com.android.support:support-annotations:25.4.0'
     androidTestImplementation 'com.android.support.test.espresso:espresso-intents:2.2.2'
     androidTestImplementation 'com.android.support.test:rules:1.0.1'
